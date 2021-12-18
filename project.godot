@@ -14,10 +14,6 @@ config/name="godot-2d-game"
 run/main_scene="res://Scenes/Menu.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-SceneChanger="*res://Scripts/SceneChanger.gd"
-
 [input]
 
 left={

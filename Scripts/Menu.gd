@@ -22,11 +22,10 @@
 
 extends Control
 
-func _ready():
-	"""On ready function."""
-	for button in $Buttons.get_children():
-		button.connect("pressed", self, "play", [button.scene_to_play])
+func _on_Play_pressed() -> void:
+	"""Change scene to play sand box."""
+	var _cs = get_tree().change_scene("res://Scenes/SandBox.tscn")
 
-func play(path: String):
-	"""Play button."""
-	SceneChanger.play(path)
+func _on_Exit_pressed() -> void:
+	"""Exit in this game."""
+	get_tree().quit()
